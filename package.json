@@ -1,20 +1,43 @@
 {
-    "name": "nelsius-pay-node",
-    "version": "1.0.0",
-    "description": "Official Node.js SDK for the Nelsius Developer API",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "keywords": [
-        "nelsius",
-        "payments",
-        "sdk",
-        "api"
-    ],
-    "author": "Nelsius Team",
-    "license": "MIT",
-    "dependencies": {
-        "axios": "^1.6.0"
-    }
+  "name": "nelsius-pay",
+  "version": "2.0.0",
+  "description": "Official Node.js & TypeScript SDK for Nelsius Pay API V2",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "nelsius",
+    "nelsiuspay",
+    "payments",
+    "checkout",
+    "mobile-money",
+    "orange-money",
+    "mtn-momo",
+    "sdk",
+    "cameroon",
+    "africa",
+    "fintech"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nelson-siebi/nelsius-pay-node.git"
+  },
+  "homepage": "https://nelsiuspay.com",
+  "author": "Nelson Siebi <nelsonsiebi237@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
 }
